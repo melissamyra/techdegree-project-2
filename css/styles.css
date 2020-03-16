@@ -178,6 +178,10 @@ footer {
   font-weight: 600;
 }
 
+.travel {
+  clear: both;
+}
+
 /* ------------Quote Section------------ */
 
 .quote-container {
@@ -398,6 +402,10 @@ a:hover {
 
   .portfolio {
     padding: 60px 0;
+  }
+
+  .travel {
+    clear: none;
   }
 
   .quote-container p {
