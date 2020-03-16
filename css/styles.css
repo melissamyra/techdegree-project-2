@@ -199,19 +199,25 @@ a:hover {
 
 .quote-container {
   background: url('https://upload.wikimedia.org/wikipedia/commons/a/ae/Van_Bentum_Explosion_in_the_Alchemist%E2%80%99s_Laboratory_FA_2000.001.285.jpg') no-repeat,
-  linear-gradient(to top, #000 -30%, #fff);
+  linear-gradient(to top, #000 -20%, #fff);
   background-blend-mode: multiply;
   background-size: cover;
   background-position: 50% 65%;
 
   color: #fff;
   margin: 60px auto 0;
-  padding: 40px;
+  padding: 40px 10px;
 }
 
 .quote-container p {
   line-height: 1.5;
-  font-size: 1.2em;
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+
+.quote-container cite {
+  font-size: .9em;
+  line-height: -5;
 }
 
 /* ------------Media Queries------------ */
@@ -280,6 +286,14 @@ a:hover {
 
   .quote-container {
     width: 90%;
+  }
+
+  .quote-container p {
+    font-size: 1.2em;
+  }
+
+  .quote-container cite {
+    font-size: 1em;
   }
 
   .desc {
@@ -382,6 +396,10 @@ a:hover {
 
   .portfolio {
     padding: 60px 0;
+  }
+
+  .quote-container p {
+    font-size: 1.3em;
   }
 
   .contact-container {
