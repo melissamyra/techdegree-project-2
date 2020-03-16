@@ -1,0 +1,392 @@
+
+/* ------------Google Font------------ */
+@import url('https://fonts.googleapis.com/css?family=Inter|Roboto:500&display=swap');
+
+/* ---------------------------------------------------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  color: #4a4a4a;
+  font: 1em;
+  background: #fafafa;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  padding: 25px 0;
+  margin: 0 auto;
+}
+
+header p {
+  color: #7f7f7f;
+  font-size: 1em;
+  font-weight: normal;
+  line-height: 1.5;
+  padding: 0 25px;
+  margin: 0;
+
+}
+
+nav ul {
+  text-align: center;
+  padding: 0 15px;
+  margin: 0;
+}
+
+ nav li {
+  display: block;
+  background: #fff;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: .9em;
+  letter-spacing: .5px;
+  padding: 10px 0;
+  margin-bottom: 5px;
+}
+
+hr {
+  margin: 0 20px;
+  opacity: .5;
+}
+
+footer {
+  width: 90%;
+  margin: 30px auto;
+}
+
+/* ------------Classes------------ */
+
+.intro-container {
+  padding: 35px 0 20px;
+}
+
+.name {
+  font-size: 1.7em;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  margin: 0 0 25px;
+  padding: 0;
+}
+
+.profile-picture {
+  object-fit: cover;
+  width: 65%;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.section-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: .9em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.contact-container {
+  margin: 60px 0;
+}
+
+.contact {
+  margin: 0 0 35px;
+}
+
+.desc, .details {
+  color: #7f7f7f;
+}
+
+.desc {
+  line-height: 1.5;
+  padding: 0 20px;
+  margin: 0 0 30px;
+}
+
+.details {
+  margin-bottom: 20px;
+}
+
+.details span {
+  margin-left: 5px;
+}
+
+.footer-name, .back-to-top, .footer-nav {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.footer-name {
+  float: left;
+  margin: 0;
+  font-size: .9em;
+}
+
+.back-to-top,
+.footer-nav {
+  font-size: .75em;
+  font-weight: bold;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+
+.back-to-top {
+  float: right;
+}
+
+.footer-nav li{
+  display: none;
+}
+
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ------------Portfolio Cards------------ */
+
+.portfolio-container {
+  background: #fff;
+  padding-bottom: 35px;
+}
+
+.portfolio {
+  padding: 45px 0;
+  margin: 0;
+}
+
+
+.card {
+  margin: 0 auto 35px;
+  width: 90%;
+}
+
+.card p {
+  font-size: .95em;
+  font-weight: 400;
+  line-height: 1.35;
+  padding: 0 10px 0;
+  margin: 15px 0;
+}
+
+.project-img {
+  width: 100%;
+}
+
+.project-title {
+  margin: 25px 0 0;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+/* ------------Links------------ */
+
+a:link, a:visited {
+  color: #4a4a4a;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FFCBC2;
+}
+
+/* ------------Quote Section------------ */
+
+.quote-container {
+  background: url('https://upload.wikimedia.org/wikipedia/commons/a/ae/Van_Bentum_Explosion_in_the_Alchemist%E2%80%99s_Laboratory_FA_2000.001.285.jpg') no-repeat;
+  background-size: cover;
+  background-position: 50% 65%;
+  color: #fff;
+  margin: 20px auto;
+  padding: 40px;
+}
+
+.quote-container p {
+  line-height: 1.5;
+  font-size: 1.2em;
+}
+
+/* ------------Media Queries------------ */
+
+
+/* =======================768px======================= */
+
+@media (min-width: 768px){
+
+  header {
+    padding-bottom: 40px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  header p {
+    text-align: left;
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul {
+    margin: 30px 0 60px;
+  }
+
+  nav li {
+    background: transparent;
+    display: inline-block;
+    padding: 0 20px;
+    margin: 0;
+  }
+
+  footer {
+    width: 95%;
+    margin-bottom: 70px;
+  }
+
+  /* --Min-768px Classes- */
+
+  .intro-container {
+    padding: 0;
+    margin: 0 0 30px;
+  }
+
+  .intro-container p {
+    float: left;
+    width: 60%;
+    padding-right: 25px;
+  }
+
+  .name {
+    margin:30px 0 0;
+    padding: 0;
+  }
+
+  .profile-picture {
+    object-fit: cover;
+    width: 40%;
+    height: 250px;
+    float: right;
+    margin: 0;
+  }
+
+  .quote-container {
+    width: 90%;
+  }
+
+  .desc {
+    width: 70%;
+    margin: 0 auto 40px;
+    line-height: 1.4;
+  }
+
+  .desc, .details {
+    font-size: 1.2em;
+  }
+
+  .back-to-top {
+    display: none;
+  }
+
+  .footer-nav {
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-nav {
+    float: right;
+    margin: 0;
+  }
+
+  .footer-nav li {
+    display: inline-block;
+    padding: 0 0 0 30px;
+  }
+
+  /* --Min-768px Portfolio Cards-- */
+
+  .portfolio-container {
+    padding: 0 30px 15px;
+  }
+
+  .card {
+    float: left;
+    width: 50%;
+    padding: 0 7px;
+  }
+
+  .project-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 10px -10px #4a4a4a;
+  }
+
+}
+
+/* =======================1024px======================= */
+
+@media (min-width: 1024px) {
+
+  header {
+    margin: 40px auto 30px;
+  }
+
+  nav ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav li {
+    padding-left: 30px;
+    padding-right: 0;
+  }
+
+  footer {
+    width: 95%;
+    margin: 30px auto;
+  }
+
+  .content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .name {
+    float: left;
+    margin: 0;
+    padding: 0;
+  }
+
+  .intro-container {
+    padding-top: 50px;
+    margin: 0;
+  }
+
+  .intro-container p {
+    padding-right: 60px;
+  }
+
+  .card {
+    width: calc(100% / 3);
+    padding: 0 10px 40px;
+    margin: 0;
+  }
+
+  .portfolio {
+    padding: 60px 0;
+  }
+
+  .contact-container {
+    margin-bottom: 70px;
+  }
+
+  .footer-nav li {
+    font-size: 1em;
+  }
+
+}
