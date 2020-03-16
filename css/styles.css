@@ -142,12 +142,6 @@ footer {
   display: none;
 }
 
-.clearfix {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 /* ------------Portfolio Cards------------ */
 
 .portfolio-container {
@@ -184,17 +178,6 @@ footer {
   font-weight: 600;
 }
 
-/* ------------Links------------ */
-
-a:link, a:visited {
-  color: #4a4a4a;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #FFCBC2;
-}
-
 /* ------------Quote Section------------ */
 
 .quote-container {
@@ -219,6 +202,26 @@ a:hover {
   font-size: .9em;
   line-height: -5;
 }
+
+/* ------------Links------------ */
+
+a:link, a:visited {
+  color: #4a4a4a;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FFCBC2;
+}
+
+/* ------------clearfix------------ */
+
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 
 /* ------------Media Queries------------ */
 
@@ -266,7 +269,6 @@ a:hover {
   }
 
   .intro-container p {
-    float: left;
     width: 60%;
     padding-right: 25px;
   }
