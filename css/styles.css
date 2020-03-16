@@ -198,9 +198,12 @@ a:hover {
 /* ------------Quote Section------------ */
 
 .quote-container {
-  background: url('https://upload.wikimedia.org/wikipedia/commons/a/ae/Van_Bentum_Explosion_in_the_Alchemist%E2%80%99s_Laboratory_FA_2000.001.285.jpg') no-repeat;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/a/ae/Van_Bentum_Explosion_in_the_Alchemist%E2%80%99s_Laboratory_FA_2000.001.285.jpg') no-repeat,
+  linear-gradient(to top, #000 -30%, #fff);
+  background-blend-mode: multiply;
   background-size: cover;
   background-position: 50% 65%;
+
   color: #fff;
   margin: 60px auto 0;
   padding: 40px;
