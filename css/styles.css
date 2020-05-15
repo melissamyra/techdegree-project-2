@@ -167,7 +167,7 @@ footer {
   margin: 15px 0;
 }
 
-.project-img {
+.card img {
   width: 100%;
 }
 
@@ -184,14 +184,12 @@ footer {
 /* ------------Quote Section------------ */
 
 .quote-container {
-  background: url('https://upload.wikimedia.org/wikipedia/commons/a/ae/Van_Bentum_Explosion_in_the_Alchemist%E2%80%99s_Laboratory_FA_2000.001.285.jpg') no-repeat,
-  linear-gradient(to top, #000 -20%, #fff);
+  background: url('https://static.vecteezy.com/packs/media/components/home/masthead-vectors/img/lavakidneys_800x400@2x-2db5e5a0c944e2b16a11a18674570f76.jpg') no-repeat;
   background-blend-mode: multiply;
   background-size: cover;
   background-position: 50% 65%;
-
   color: #fff;
-  margin: 60px auto 0;
+  margin: 30px auto 0;
   padding: 40px 10px;
 }
 
@@ -340,7 +338,11 @@ a:hover {
     padding: 0 7px;
   }
 
-  .project-img:hover {
+  .card img {
+    transition: transform .2s ease;
+  }
+
+  .card img:hover {
     transform: scale(1.1);
     box-shadow: 0 8px 10px -10px #4a4a4a;
   }
