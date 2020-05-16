@@ -153,12 +153,6 @@ footer {
   margin: 0;
 }
 
-
-.card {
-  margin: 0 auto 35px;
-  width: 90%;
-}
-
 .card p {
   font-size: .95em;
   font-weight: 400;
@@ -168,7 +162,7 @@ footer {
 }
 
 .card img {
-  width: 100%;
+  width: 90%;
 }
 
 .project-title {
@@ -189,7 +183,7 @@ footer {
   background-size: cover;
   background-position: 50% 65%;
   color: #fff;
-  margin: 30px auto 0;
+  margin: 60px auto 0;
   padding: 40px 10px;
 }
 
@@ -215,14 +209,22 @@ a:hover {
   color: #FFCBC2;
 }
 
+/* ------------grid------------ */
+
+.grid {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 10px;
+}
+
 /* ------------clearfix------------ */
 
 .clearfix {
+  clear: both;
   content: "";
   display: table;
-  clear: both;
 }
-
 
 /* ------------Media Queries------------ */
 
@@ -329,17 +331,12 @@ a:hover {
   /* --Min-768px Portfolio Cards-- */
 
   .portfolio-container {
-    padding: 0 30px 15px;
-  }
-
-  .card {
-    float: left;
-    width: 50%;
-    padding: 0 7px;
+    padding: 0 30px 60px;
   }
 
   .card img {
     transition: transform .2s ease;
+    width: 100%;
   }
 
   .card img:hover {
@@ -393,18 +390,8 @@ a:hover {
     padding-right: 60px;
   }
 
-  .card {
-    width: calc(100% / 3);
-    padding: 0 10px 40px;
-    margin: 0;
-  }
-
   .portfolio {
     padding: 60px 0;
-  }
-
-  .travel {
-    clear: none;
   }
 
   .quote-container p {
